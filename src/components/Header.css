@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #1877f2; /* Facebook Blue */
+  color: white;
+}
+
+.nav {
+  display: flex;
+  gap: 15px;
+}
+
+.nav button {
+  background-color: #ffffff;
+  color: #1877f2;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav button:hover {
+  background-color: #ddd;
+}
+
+.settings {
+  position: relative;
+}
+
+.settings button {
+  background-color: white;
+  color: #1877f2;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.settings button:hover {
+  background-color: #ddd;
+}

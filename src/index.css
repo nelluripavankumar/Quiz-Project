@@ -1,0 +1,57 @@
+/* General Styles */
+.app {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Themes */
+.app.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.app.dark {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Stars Animation */
+.stars, .twinkling {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.stars {
+  background: transparent url('https://www.script-tutorials.com/demos/360/images/stars.png') repeat top center;
+  animation: moveStars 50s linear infinite;
+}
+
+.twinkling {
+  background: transparent url('https://www.script-tutorials.com/demos/360/images/twinkling.png') repeat top center;
+  animation: moveTwinkling 100s linear infinite;
+}
+
+@keyframes moveStars {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 10000px;
+  }
+}
+
+@keyframes moveTwinkling {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px -10000px;
+  }
+}

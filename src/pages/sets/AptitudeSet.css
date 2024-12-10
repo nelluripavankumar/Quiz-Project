@@ -1,0 +1,70 @@
+/* Aptitude Set Quiz Page */
+.aptitude-set-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background: #f0f0f0;
+    height: 100vh;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  
+  .timer {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 24px;
+  }
+  
+  .timer-text {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .timer-value {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .quiz-container {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quiz-container h2 {
+    font-size: 28px;
+  }
+  
+  .option {
+    margin-bottom: 10px;
+  }
+  
+  .option input {
+    margin-right: 10px;
+  }
+  
+  .next-btn {
+    padding: 12px 20px;
+    background-color: #28a745;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .next-btn:hover {
+    background-color: #218838;
+  }
+  

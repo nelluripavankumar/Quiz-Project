@@ -1,0 +1,58 @@
+.aptitude-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #f0f0f0;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.aptitude-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+  gap: 20px;
+  max-width: 960px; /* Max width to keep the layout centered */
+  width: 100%;
+}
+
+.aptitude-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transform: perspective(1000px) rotateY(10deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.aptitude-option:hover {
+  transform: perspective(1000px) rotateY(0deg);
+}
+
+.aptitude-option-box {
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.aptitude-option-box h2 {
+  font-size: 24px;
+}
+
+.aptitude-option-box p {
+  font-size: 16px;
+  color: #555;
+}
+
+.aptitude-option-box:hover {
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  transform: translateY(-10px);
+}
