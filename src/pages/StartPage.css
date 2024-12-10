@@ -1,0 +1,90 @@
+/* Container Styles */
+.start-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Instructions Box */
+  .instructions-box {
+    background: #fff;
+    color: #333;
+    width: 80%;
+    max-width: 600px;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  /* Title */
+  .instructions-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #6a11cb;
+  }
+  
+  /* Content */
+  .instructions-content {
+    text-align: left;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .instructions-content p,
+  .instructions-content ul {
+    margin-bottom: 1rem;
+  }
+  
+  .instructions-content ul {
+    padding-left: 1.5rem;
+  }
+  
+  .instructions-content ul li {
+    list-style-type: disc;
+  }
+  
+  /* Timer Box */
+  .timer-box {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .timer-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .timer-countdown {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e74c3c;
+  }
+  
+  /* Start Button */
+  .start-button {
+    background: #6a11cb;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .start-button:hover {
+    background: #2575fc;
+  }
+  
+  .start-button.disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+  

@@ -41,3 +41,20 @@
 .settings button:hover {
   background-color: #ddd;
 }
+.home-button {
+  margin-left: 20px;
+}
+
+.home-button button {
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.home-button button:hover {
+  background-color: #45a049;
+}

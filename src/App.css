@@ -25,3 +25,48 @@ button:hover {
   transform: scale(1.1);
   background-color: #005bb5;
 }
+/* Stars Background */
+.stars {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #000; /* Base background color */
+  overflow: hidden;
+  z-index: -1; /* Ensures it stays in the background */
+}
+
+/* Star Animations */
+.stars:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(white, transparent 70%);
+  background-size: 1px 1px;
+  opacity: 0.5;
+  animation: twinkling 2s infinite;
+}
+
+/* Twinkling Effect */
+@keyframes twinkling {
+  0% { opacity: 0; }
+  50% { opacity: 0; }
+  100% { opacity: 0; }
+}
+.stars {
+  background: transparent url('https://www.script-tutorials.com/demos/360/images/stars.png') repeat top center;
+  animation: moveStars 50s linear infinite;
+}
+
+@keyframes moveStars {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 10000px;
+  }
+}

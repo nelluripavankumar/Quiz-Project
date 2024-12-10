@@ -16,6 +16,10 @@ const Header = ({ toggleTheme }) => {
       <div className="settings">
         <button onClick={toggleTheme}>Appearance</button>
       </div>
+      {/* Home Button */}
+      <div className="home-button">
+        <button onClick={() => window.location.href = '/'}>Home</button>
+      </div>
     </header>
   );
 };

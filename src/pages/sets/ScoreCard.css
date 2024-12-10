@@ -1,0 +1,154 @@
+/* ScoreCard.css */
+
+/* Starry Background */
+.scorecard-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+  }
+  
+
+  /* @keyframes starsAnimation {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: -1000px 1000px;
+    }
+  }
+   */
+  /* ScoreCard Content */
+  .score-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .pie-chart-container {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .pie-chart {
+    width: 150px;
+    height: 150px;
+    background: conic-gradient(
+      #4caf50 calc(var(--correct-percentage) * 1%),
+      #f44336 0
+    );
+    border-radius: 50%;
+    position: relative;
+    animation: scaleUp 1s ease-in-out;
+  }
+  
+  .pie-chart::after {
+    content: '';
+    position: absolute;
+    top: 12%;
+    left: 12%;
+    width: 76%;
+    height: 76%;
+    background: rgba(30, 60, 114, 0.85); /* Match header background */
+    border-radius: 50%;
+  }
+  
+  .score-details {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .topic-info {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    color: #f0f0f0;
+  }
+  
+  .home-button {
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #fff;
+    background: #007acc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .home-button:hover {
+    transform: scale(1.1);
+    background-color: #005f9e;
+  }
+  
+  /* Keyframes for animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes scaleUp {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  /* Feedback Section */
+.performance-feedback {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  
+  .performance-feedback .emoji {
+    font-size: 2.5rem;
+    display: block;
+    margin: 0.5rem 0;
+  }
+  
+  .feedback-message {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #f0f0f0;
+  }
+  /* Ensure all text is in proper black */
+.aptitude-app {
+  color: #000000;
+}
+
+.title-container h1,
+.question-window h2,
+.question-window p,
+.option label,
+.timer-value,
+.timer-text,
+.modal h2,
+.modal p {
+  color: #000000;
+}
+
+/* Tracker numbers and question box text */
+.question-box {
+  color: #000000;
+}

@@ -6,6 +6,24 @@
   height: 100vh;
   background: #f0f0f0;
 }
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #000; /* Set to pure black for high visibility */
+}
+
+.aptitude-option-box h2 {
+  font-size: 24px;
+  color: #000; /* Pure black for the heading text */
+  font-weight: bold; /* Make it bolder */
+}
+
+.aptitude-option-box p {
+  font-size: 16px;
+  color: #333; /* Dark gray for better visibility */
+  font-weight: bold; /* Slightly bolder to enhance readability */
+}
 
 .title {
   font-size: 36px;

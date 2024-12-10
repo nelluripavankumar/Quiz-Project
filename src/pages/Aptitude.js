@@ -1,12 +1,12 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom'; // Import navigation hook
-import './topics.css'; // Import the CSS file for styling
+import { useNavigate } from 'react-router-dom';
+import './topics.css';
+
 const Aptitude = () => {
   const navigate = useNavigate();
 
-  // Navigate to the selected aptitude set page
   const handleSelectSet = (setNumber) => {
-    navigate(`/aptitude-set-${setNumber}`); // Navigate dynamically based on set number
+    navigate('/start-page', { state: { setNumber } }); // Navigate to the Start Page with the set number
   };
 
   return (
@@ -17,7 +17,7 @@ const Aptitude = () => {
           <div
             key={setNumber}
             className="aptitude-option"
-            onClick={() => handleSelectSet(setNumber)} // On click, navigate to the corresponding set
+            onClick={() => handleSelectSet(setNumber)}
           >
             <div className="aptitude-option-box">
               <h2>Aptitude Set {setNumber}</h2>
