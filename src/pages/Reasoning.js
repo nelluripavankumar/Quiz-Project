@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './topics.css';
 
-const Aptitude = () => {
+const Reasoning = () => {
   const navigate = useNavigate();
 
   const handleSelectSet = (setNumber) => {
@@ -11,7 +11,7 @@ const Aptitude = () => {
 
   return (
     <div className="aptitude-container">
-      <h1 className="title">Choose an Aptitude Set</h1>
+      <h1 className="title">Choose an Reasoning Set</h1>
       <div className="aptitude-options">
         {[1, 2, 3, 4, 5, 6].map((setNumber) => (
           <div
@@ -20,7 +20,7 @@ const Aptitude = () => {
             onClick={() => handleSelectSet(setNumber)}
           >
             <div className="aptitude-option-box">
-              <h2>Aptitude Set {setNumber}</h2>
+              <h2>Reasoning Set {setNumber}</h2>
               <p>Start Quiz</p>
             </div>
           </div>
@@ -30,4 +30,4 @@ const Aptitude = () => {
   );
 };
 
-export default Aptitude;
+export default Reasoning;

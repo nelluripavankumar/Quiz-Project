@@ -13,26 +13,9 @@ const Aptitude = () => {
 
   const navigate = useNavigate();
 
-    const questions = [
-      {
-        question: "What is 2 + 2?",
-        options: ["3", "4", "5", "6"],
-        correctAnswer: "4",
-      },
-      {
-        question: "What is the capital of France?",
-        options: ["Berlin", "Madrid", "Paris", "Rome"],
-        correctAnswer: "Paris",
-      },
-      {
-        question: "Who is the CEO of Tesla?",
-        options: ["Jeff Bezos", "Elon Musk", "Bill Gates", "Mark Zuckerberg"],
-        correctAnswer: "Elon Musk",
-      },
-      // Add more questions here to reach 20 questions
-    ];
-  
-
+  const questions = [
+    // Add your 20 questions here, as shown above
+  ];
 
   useEffect(() => {
     if (timer > 0) {
@@ -157,6 +140,8 @@ const Aptitude = () => {
             </button>
           </div>
         </div>
+
+        {/* Question Tracker */}
         <div className="question-tracker">
           {answeredQuestions.map((answered, index) => (
             <div

@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
-const Header = ({ toggleTheme }) => {
+const Header = ({ toggleTheme, isLoggedIn }) => {
   return (
     <header className="header">
       <h1>Placement Quiz Website</h1>
@@ -16,10 +17,17 @@ const Header = ({ toggleTheme }) => {
       <div className="settings">
         <button onClick={toggleTheme}>Appearance</button>
       </div>
-      {/* Home Button */}
       <div className="home-button">
         <button onClick={() => window.location.href = '/'}>Home</button>
       </div>
+      {/* Profile Icon */}
+      {isLoggedIn && (
+        <div className="profile">
+          <Link to="/user-profile">
+            <img src="profile-icon.png" alt="Profile" className="profile-icon" />
+          </Link>
+        </div>
+      )}
     </header>
   );
 };

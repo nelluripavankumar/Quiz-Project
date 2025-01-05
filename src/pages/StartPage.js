@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom'; // For navigation and accessing state
 import './StartPage.css'; // Correct capitalization
 const StartPage = () => {
-  const [timer, setTimer] = useState(10); // 30-second timer
+  const [timer, setTimer] = useState(1); // 30-second timer
   const [buttonEnabled, setButtonEnabled] = useState(false); // Start button disabled initially
 
   const navigate = useNavigate();

@@ -1,289 +1,289 @@
 /* Basic Styles */
 .aptitude-app {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: flex-start;
-    height: 100vh;
-    padding: 20px;
-    background-color: #f4f4f4;
-    overflow: hidden;
-    flex-direction: column;
-  }
-  
-  /* Header Container - Positioned with Flexbox */
-  .header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 20px; /* Space below */
-    padding-top: 20px;
-  }
-  
-  /* Title Box - Positioned to the Left */
-  .title-container {
-    background-color: white;
-    border: 3px solid black;
-    width: 200px; /* Same width as timer */
-    padding: 10px;
-    text-align: center;
-    margin-right: 20px; /* Space between title and timer */
-  }
-  
-  .title-container h1 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  /* Timer and Submit Button Box - Positioned to the Right */
-  .timer-container {
-    display: flex;
-    align-items: center; /* Align timer and button horizontally */
-    width: 300px; /* Adjust width for both timer and button */
-    justify-content: space-between; /* Space between timer and button */
-  }
-  
-  /* Timer Styles */
-  .timer {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 24px;
-  }
-  
-  .timer-text {
-    font-size: 16px;
-    margin-bottom: 5px;
-  }
-  
-  .timer-value {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .submit-btn {
-    padding: 12px 30px;
-    font-size: 18px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-left: 20px; /* Adds space between the timer and the submit button */
-  }
-  
-  .submit-btn:hover {
-    background-color: #218838;
-  }
-  
-  /* Content Layout */
-  .content-container {
-    display: flex;
-    width: 100%;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-  
-  .question-window {
-    background-color: white;
-    width: 75%;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    margin-right: 10px;
-    border: 3px solid #333; /* Darker border */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .question-window h2 {
-    font-size: 26px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .question-window p {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 15px;
-  }
-  
-  .option {
-    margin: 10px 0;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .option input[type="radio"] {
-    margin-right: 10px;
-  }
-  
-  .buttons {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-  
-  .prev-btn,
-  .next-btn {
-    padding: 12px 24px;
-    margin: 5px;
-    cursor: pointer;
-    border: none;
-    background-color: #007bff;
-    color: white;
-    font-size: 16px;
-    border-radius: 5px;
-  }
-  
-  .prev-btn:hover,
-  .next-btn:hover {
-    background-color: #0056b3;
-  }
-  
-  .prev-btn:disabled,
-  .next-btn:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-  }
-  
-  /* Right side question tracker */
-  .question-tracker {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1px; /* Reduced space between rows and columns */
-    width: 20%;
-    height: calc(100vh - 100px); /* Adjusted for overall height */
-    overflow-y: auto;
-    border: 3px solid black; /* Black border around tracker */
-    padding: 10px;
-  }
-  
-  .question-box {
-    width: 40px;
-    height: 40px;
-    background-color: #f1f1f1;
-    text-align: center;
-    line-height: 40px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    border: 2px solid #333;
-  }
-  
-  .question-box.answered {
-    background-color: #ffc107; /* Yellow for answered questions */
-  }
-  
-  .question-box.correct {
-    background-color: #28a745; /* Green for correct answers */
-    color: white;
-  }
-  
-  .question-box.incorrect {
-    background-color: #ff9800; /* Orange for incorrect answers */
-    color: white;
-  }
-  
-  .question-box:hover {
-    background-color: #e0e0e0;
-  }
-  /* Modal Styles */
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  font-family: Arial, sans-serif;
   display: flex;
+  justify-content: flex-start;
+  height: 100vh;
+  padding: 20px;
+  background-color: #f4f4f4;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+/* Header Container - Positioned with Flexbox */
+.header-container {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  z-index: 1000;
-  animation: fadeIn 0.5s ease-in-out;
+  width: 100%;
+  margin-bottom: 20px; /* Space below */
+  padding-top: 20px;
+}
+
+/* Title Box - Positioned to the Left */
+.title-container {
+  background-color: white;
+  border: 3px solid black;
+  width: 200px; /* Same width as timer */
+  padding: 10px;
+  text-align: center;
+  margin-right: 20px; /* Space between title and timer */
+}
+
+.title-container h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Timer and Submit Button Box - Positioned to the Right */
+.timer-container {
+  display: flex;
+  align-items: center; /* Align timer and button horizontally */
+  width: 300px; /* Adjust width for both timer and button */
+  justify-content: space-between; /* Space between timer and button */
+}
+
+/* Timer Styles */
+.timer {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 24px;
+}
+
+.timer-text {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.timer-value {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.submit-btn {
+  padding: 12px 30px;
+  font-size: 18px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 20px; /* Adds space between the timer and the submit button */
+}
+
+.submit-btn:hover {
+  background-color: #218838;
+}
+
+/* Content Layout */
+.content-container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.question-window {
+  background-color: white;
+  width: 75%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  margin-right: 10px;
+  border: 3px solid #333; /* Darker border */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.question-window h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.question-window p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.option {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.option input[type="radio"] {
+  margin-right: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.prev-btn,
+.next-btn {
+  padding: 12px 24px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background-color: #0056b3;
+}
+
+.prev-btn:disabled,
+.next-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Right side question tracker */
+.question-tracker {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px; /* Reduced space between rows and columns */
+  width: 20%;
+  height: calc(100vh - 100px); /* Adjusted for overall height */
+  overflow-y: auto;
+  border: 3px solid black; /* Black border around tracker */
+  padding: 10px;
+}
+
+.question-box {
+  width: 40px;
+  height: 40px;
+  background-color: #f1f1f1;
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid #333;
+}
+
+.question-box.answered {
+  background-color: #2007ff; /* Yellow for answered questions */
+}
+
+.question-box.correct {
+  background-color: #e9d311; /* Green for correct answers */
+  color: white;
+}
+
+.question-box.incorrect {
+  background-color: #ffea00cc; /* Orange for incorrect answers */
+  color: white;
+}
+
+.question-box:hover {
+  background-color: #e0e0e0;
+}
+/* Modal Styles */
+.modal-overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.5);
+display: flex;
+align-items: center;
+justify-content: center;
+z-index: 1000;
+animation: fadeIn 0.5s ease-in-out;
 }
 
 .modal {
-  background: #fff;
-  padding: 2rem;
-  border-radius: 10px;
-  width: 400px;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  animation: scaleUp 0.3s ease-in-out;
+background: #fff;
+padding: 2rem;
+border-radius: 10px;
+width: 400px;
+text-align: center;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+animation: scaleUp 0.3s ease-in-out;
 }
 
 .modal h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+font-size: 1.5rem;
+margin-bottom: 1rem;
 }
 
 .modal p {
-  font-size: 1.2rem;
-  margin-bottom: 1.5rem;
+font-size: 1.2rem;
+margin-bottom: 1.5rem;
 }
 
 .modal-buttons {
-  display: flex;
-  justify-content: space-around;
+display: flex;
+justify-content: space-around;
 }
 
 .modal-buttons .submit-btn {
-  background: #007acc;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
+background: #007acc;
+color: white;
+padding: 0.75rem 1.5rem;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 1rem;
 }
 
 .modal-buttons .submit-btn:hover {
-  background: #005f9e;
+background: #005f9e;
 }
 
 .modal-buttons .cancel-btn {
-  background: #f44336;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
+background: #f44336;
+color: white;
+padding: 0.75rem 1.5rem;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 1rem;
 }
 
 .modal-buttons .cancel-btn:hover {
-  background: #d32f2f;
+background: #d32f2f;
 }
 
 /* Animations */
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+from {
+  opacity: 0;
+}
+to {
+  opacity: 1;
+}
 }
 
 @keyframes scaleUp {
-  from {
-    transform: scale(0.8);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
+from {
+  transform: scale(0.8);
+  opacity: 0;
+}
+to {
+  transform: scale(1);
+  opacity: 1;
+}
 }
 /* Ensure all text is in proper black */
 .aptitude-app {
-  color: #000000;
+color: #000000;
 }
 
 .title-container h1,
@@ -294,10 +294,10 @@
 .timer-text,
 .modal h2,
 .modal p {
-  color: #000000;
+color: #000000;
 }
 
 /* Tracker numbers and question box text */
 .question-box {
-  color: #000000;
+color: #000000;
 }
